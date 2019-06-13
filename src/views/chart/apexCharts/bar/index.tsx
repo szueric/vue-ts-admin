@@ -17,11 +17,11 @@ import './index.less';
 @Component({
   name: 'Bar',
   components: {
-    'a-row': Row,
-    'a-col': Col,
-    'a-card': Card,
+  'a-row': Row,
+  'a-col': Col,
+  'a-card': Card,
   },
-})
+  })
 export default class Bar extends Vue {
   itemLayout = {
     xxl: 12,
@@ -29,7 +29,7 @@ export default class Bar extends Vue {
     md: 12,
     sm: 24,
     xs: 24,
-  }
+  };
 
   basicBarChart: any = null;
 
@@ -92,43 +92,43 @@ export default class Bar extends Vue {
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">basic-bar</h2>
-              <div id="basic-bar"></div>
+              <div id="basic-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">grouped-bar</h2>
-              <div id="grouped-bar"></div>
+              <div id="grouped-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">stacked-bar</h2>
-              <div id="stacked-bar"></div>
+              <div id="stacked-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">full-stacked-bar</h2>
-              <div id="full-stacked-bar"></div>
+              <div id="full-stacked-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">negative-bar</h2>
-              <div id="negative-bar"></div>
+              <div id="negative-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">pattern-bar</h2>
-              <div id="pattern-bar"></div>
+              <div id="pattern-bar" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">image-fill-bar</h2>
-              <div id="image-fill-bar"></div>
+              <div id="image-fill-bar" />
             </a-card>
           </a-col>
         </a-row>

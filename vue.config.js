@@ -1,6 +1,7 @@
 const Mock = require('./src/mock/index');
 
 module.exports = {
+  lintOnSave: process.env.NODE_ENV === 'development',
   chainWebpack: (config) => {
     'use strict';
 

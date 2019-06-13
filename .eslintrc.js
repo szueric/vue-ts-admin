@@ -3,24 +3,20 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
-    '@vue/typescript',
-  ],
+  extends: ['plugin:vue/essential', '@vue/airbnb', '@vue/typescript'],
   rules: {
     'max-len': 'off',
     'new-cap': 'off',
     'no-continue': 'off',
-    'experimentalDecorators': 'off',
+    experimentalDecorators: 'off',
     'consistent-return': 'off',
     'no-plusplus': 'off',
     'guard-for-in': 'off',
     'prefer-destructuring': 'off',
     'prefer-promise-reject-errors': 'off',
-    'camelcase': 'off',
+    camelcase: 'off',
     'eslint-import-resolver-typescript': {
-      'extensions': ['.ts', '.tsx', '.d.ts']
+      extensions: ['.ts', '.tsx', '.d.ts'],
     },
     'space-infix-ops': 'off',
     'import/prefer-default-export': 'off',
@@ -34,17 +30,9 @@ module.exports = {
     'no-param-reassign': 'off',
     'class-methods-use-this': 'off',
     'linebreak-style': 'off',
-    'no-console': 'off',
-    'no-debugger': 'off',
-    'vue/attribute-hyphenation': [
-      'error',
-      'always'
-    ],
+    'vue/attribute-hyphenation': ['error', 'always'],
     'vue/html-end-tags': 'error',
-    'vue/html-indent': [
-      'error',
-      2
-    ],
+    'vue/html-indent': ['error', 2],
     'vue/html-self-closing': 'error',
     'vue/require-default-prop': 'error',
     'vue/require-prop-types': 'error',

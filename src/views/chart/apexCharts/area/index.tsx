@@ -31,7 +31,7 @@ export default class Area extends Vue {
     md: 12,
     sm: 24,
     xs: 24,
-  }
+  };
 
   basicAreaChart: any = null;
 
@@ -80,20 +80,28 @@ export default class Area extends Vue {
       this.areaChartGithub2Chart.render();
       areaChartGithubOptions.events = {
         selection(e: any, t: any) {
-          this.areaChartGithub2Chart.updateOptions({
-            xaxis: {
-              min: t.xaxis.min,
-              max: t.xaxis.max,
+          this.areaChartGithub2Chart.updateOptions(
+            {
+              xaxis: {
+                min: t.xaxis.min,
+                max: t.xaxis.max,
+              },
             },
-          }, !1, !1);
+            !1,
+            !1,
+          );
         },
         updated(e: any, t: any) {
-          this.areaChartGithub2Chart.updateOptions({
-            xaxis: {
-              min: t.config.xaxis.min,
-              max: t.config.xaxis.max,
+          this.areaChartGithub2Chart.updateOptions(
+            {
+              xaxis: {
+                min: t.config.xaxis.min,
+                max: t.config.xaxis.max,
+              },
             },
-          }, !1, !1);
+            !1,
+            !1,
+          );
         },
       };
       this.areaChartGithubChart = new window.ApexCharts(
@@ -126,50 +134,50 @@ export default class Area extends Vue {
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">basic-area</h2>
-              <div id="basic-area"></div>
+              <div id="basic-area" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">spline-area</h2>
-              <div id="spline-area"></div>
+              <div id="spline-area" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">area-chart-datetime</h2>
-              <div id="area-chart-datetime"></div>
+              <div id="area-chart-datetime" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">area-chart-negative</h2>
-              <div id="area-chart-negative"></div>
+              <div id="area-chart-negative" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">area-chart-github</h2>
-              <div id="area-chart-github" style="margin-bottom: 48px"></div>
-              <div id="area-chart-github2"></div>
+              <div id="area-chart-github" style="margin-bottom: 48px" />
+              <div id="area-chart-github2" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">stacked-area</h2>
-              <div id="stacked-area"></div>
+              <div id="stacked-area" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">area-timeSeries</h2>
-              <div id="area-timeSeries"></div>
+              <div id="area-timeSeries" />
             </a-card>
           </a-col>
           <a-col {...{ props: this.itemLayout }}>
             <a-card>
               <h2 class="item-title">area-chart-nullvalues</h2>
-              <div id="area-chart-nullvalues"></div>
+              <div id="area-chart-nullvalues" />
             </a-card>
           </a-col>
         </a-row>
